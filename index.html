@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The JS Calculator</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h1 {
+                font-size:100px;
+            }
+            #calcButtons button {
+                background-color: #d37426;
+                border-radius: 25px;
+                border: 5px solid #5e5e5e;
+                color: #eeeeee;
+                text-align: center;
+                font-size: 28px;
+                padding: 10px;
+                width: 80px;
+                margin: 2px;
+            }
+            #calcButtons button:focus {
+                background: green;
+            }
+            #calcButtons table {
+                display:inline-block;
+            }
+            #display {
+                display: inline-block;
+                font-size:35px;
+                margin-bottom: 20px;
+                width: 500px;
+                height: 40px;
+                text-align: center;
+                align-content: center;
+                border: 5px solid #5e5e5e;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The JS Calculator</h1>
+        <h3>By Joshua Carney</h3>
+        <div>
+            <p id="display"></p>
+        </div>
+        <div id="calcButtons">
+            <table>
+                <tr>
+                    <td><button type="button" class="calcBtn" id="1">1</button></td>
+                    <td><button type="button" class="calcBtn" id="2">2</button></td>
+                    <td><button type="button" class="calcBtn" id="3">3</button></td>
+                    <td><button type="button" class="calcBtn" id="+">+</button></td>
+                    <td><button type="button" class="calcBtn" id="(">(</button></td>
+                    <td><button type="button" class="calcBtn" id="pi">&#x3C0</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="calcBtn" id="4">4</button></td>
+                    <td><button type="button" class="calcBtn" id="5">5</button></td>
+                    <td><button type="button" class="calcBtn" id="6">6</button></td>
+                    <td><button type="button" class="calcBtn" id="-">-</button></td>
+                    <td><button type="button" class="calcBtn" id=")">)</button></td>
+                    <td><button type="button" class="calcBtn" id="e">e</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="calcBtn" id="7">7</button></td>
+                    <td><button type="button" class="calcBtn" id="8">8</button></td>
+                    <td><button type="button" class="calcBtn" id="9">9</button></td>
+                    <td><button type="button" class="calcBtn" id="*">*</button></td>
+                    <td><button type="button" class="calcBtn" id="^">^</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="calcBtn" id=".">.</button></td>
+                    <td><button type="button" class="calcBtn" id="0">0</button></td>
+                    <td><button type="button" class="calcBtn" id="=">=</button></td>
+                    <td><button type="button" class="calcBtn" id="/">/</button></td>
+                    <td><button type="button" class="calcBtn" id="clear">AC</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script type="text/javascript" src="ExpressionTree.js"></script>
+        <script type="text/javascript" src="lexeme.js"></script>
+        <script type="text/javascript" src="calculator.js"></script>
+    </body>
+</html>
